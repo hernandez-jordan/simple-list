@@ -1,0 +1,16 @@
+section {
+  max-width: 500px;
+  margin: auto;
+}
+
+.item{
+  text-decoration: line-through
+}
+
+.listItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  list-style-type: none;
+}
