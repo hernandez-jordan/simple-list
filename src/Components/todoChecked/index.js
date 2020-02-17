@@ -8,7 +8,7 @@ const TodoChecked = props => {
       <ul>
         {props.checked.length > 0
           ? props.checked.map((item, key) => (
-              <div className="listItem" key={key+1}> 
+              <div className="listItem" key={key++}> 
                 <li className="item">
                   {item.text} {item.id}
                 </li>

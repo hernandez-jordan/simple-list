@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TodoList from "../todoList";
 import TodoChecked from "../todoChecked";
 
-const TodoForm = props => {
+const TodoForm = () => {
   const [newItem, setNewItem] = useState("");
   const [items, setItems] = useState([]);
   const [checked, setChecked] = useState([]);
