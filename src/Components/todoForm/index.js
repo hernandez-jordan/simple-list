@@ -29,7 +29,7 @@ const TodoForm = () => {
   };
 
   return (
-    <>
+    <main className="container">
       <section className="task-form">
         <h3>New to-do</h3>
         <form onSubmit={submitHandler}>
@@ -43,16 +43,10 @@ const TodoForm = () => {
           />
           <button> Add to-do</button>
         </form>
-        <TodoList
-          items={items}
-          itemChecked={itemChecked}
-        />
+        <TodoList items={items} itemChecked={itemChecked} />
       </section>
-      <TodoChecked 
-        checked={checked}
-        deleteHandler={deleteHandler}
-      />
-    </>
+      <TodoChecked checked={checked} deleteHandler={deleteHandler} />
+    </main>
   );
 };
 

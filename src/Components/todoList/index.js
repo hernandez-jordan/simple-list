@@ -6,13 +6,15 @@ const TodoList = props => {
       <h2>To do list</h2>
       <ul>
         {props.items.map((item, key) => (
-          <div key={key}>
+          <div className="list-item" key={key}>
+            <input type={'text'} value={(item.text + '-' + item.id)} readOnly /> 
             <input 
               type="checkbox" 
               checked={false}
               onClick={() => props.itemChecked(item.id, item.text)} 
+              readOnly
+              className="checkbox"
             />
-            <input type={'text'} value={(item.text + '-' + item.id)} readOnly /> 
           </div>
         ))}
       </ul>
